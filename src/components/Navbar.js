@@ -13,11 +13,14 @@ const Navbar = () => {
 let location= useLocation();
   return (
     <div>
-      <nav className="navbar ps-3 navbar-expand-lg navbar-dark bg-dark">
+      <nav className=" w-100 ps-3 py-2 d-inline-flex flex-row navbar-dark align-items-center justify-content-between bg-dark">
+        <div className="">
+
         <Link className="navbar-brand" to="/">
           iNotebook
         </Link>
-        <button
+        </div>
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -27,10 +30,10 @@ let location= useLocation();
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+        <div className="" >
+          {/* <ul className="navbar-nav mr-auto">
             <li className="nav-item ">
               <Link className={`nav-link ${location.pathname==="/"?"active":""}`} to="/">
                 Home
@@ -41,8 +44,8 @@ let location= useLocation();
                 About
               </Link>
             </li>
-          </ul>
-          {!localStorage.getItem('token')?<form className="d-flex my-1 my-lg-0 w-100   flex-row-reverse mx-4 ">
+          </ul> */}
+          {!localStorage.getItem('token')?<form className="d-flex my-1 my-lg-0   flex-row-reverse mx-1 ">
             
           <Link className="btn btn-primary  py-1 mx-2" to="/login"  role="button">Login</Link>
           <Link className="btn btn-primary  py-1 mx-2" to="/signup" role="button">Signup</Link>
