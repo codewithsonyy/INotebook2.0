@@ -58,7 +58,7 @@ const Signup = (props) => {
             value={credentials?.name || ""}
             onChange={onChange}
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Enter name "
           />
         </div>
         <div className="form-group">
